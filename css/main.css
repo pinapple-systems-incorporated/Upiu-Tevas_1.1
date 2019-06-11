@@ -21,7 +21,8 @@ body > .background_main {
   float: left;
   width: 100vw;
   height: 100vh;
-  position: absolute;
+  position: fixed;
+  overflow: hidden;
   background-image: url(../sources/sources/Background_images/background_image_1.jpg);
   background-position: center;
   background-size: cover;
@@ -40,11 +41,10 @@ body > .header_area {
   margin-left: 30px;
   background-color: var(--primary_color_1);
   border-radius: 10px;
-  position: absolute;
+  position: fixed;
   -webkit-filter: opacity(0.8);
           filter: opacity(0.8);
   color: var(--header_text_color_1);
-  min-width: 160px;
 }
 
 body > .header_area > .logo_upiu-tevas_1 {
@@ -60,12 +60,34 @@ body > .header_area > .logo_upiu-tevas_1 {
   background-size: contain;
 }
 
-body > .content_area {
+body > .header_area > .header_content {
+  display: inline-block;
+  float: left;
+  width: 90%;
+  height: calc(100% - 100px);
+  margin-left: 5%;
+}
+
+body > .header_area > .header_content > .complete_search {
+  display: inline-block;
+  float: left;
+  width: 100%;
+  height: 25px;
+  margin-top: 10px;
+}
+
+body > .header_area > .header_content > .complete_search > #complete_search_input_field {
+  width: 100%;
+  height: 25px;
+  border-radius: 100px;
+}
+
+body > .main_content_area {
   display: inline-block;
   float: left;
   width: 82vw;
   height: 92vh;
-  background-color: var(--secondary_color_1);
+  background-color: var(--primary_color_2);
   position: absolute;
   margin-top: 4vh;
   margin-left: 16vw;
