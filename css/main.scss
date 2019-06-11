@@ -30,20 +30,7 @@ body {
                 background-repeat: no-repeat;
                 filter: blur(2px) opacity(0.6);
         }
-        > .logo_upiu-tevas_1 {       
-                background: url(../sources/sources/logo_example_v1.png);
-                height: 120px;
-                width: 150px;
-                position: absolute;
-                top: 15px;
-                right: 15px;
-                display: inline-block;
-                float: left;
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: contain;
-                
-        }
+        
        
         > .header_area {
                 display: inline-block;
@@ -59,5 +46,31 @@ body {
                 filter: opacity(0.8);
                 color: var(--header_text_color_1);
                 min-width: 160px;
+
+                > .logo_upiu-tevas_1 {       
+                        background: url(../sources/sources/logo_example_v1.png);
+                        width: 90%;
+                        height: 100px;
+                        margin-left: 5%;
+                        margin-top: 5px;
+                        display: inline-block;
+                        float: left;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: contain;
+                }
+        }
+        
+        > .content_area {
+                display: inline-block;
+                float: left;
+                width: 82vw;
+                height: 92vh;
+                background-color: var(--secondary_color_1);
+                position: absolute;
+                margin-top: 4vh;
+                margin-left: 16vw;
+                border-radius: 10px;
+                filter: opacity(0.5);
         }
 }
