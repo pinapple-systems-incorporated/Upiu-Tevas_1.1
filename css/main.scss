@@ -45,8 +45,7 @@ body {
                 border-radius: 10px;
                 position: fixed;
                 filter: opacity(0.8);
-                color: var(--header_text_color_1);
-
+                
                 > .logo_upiu-tevas_1 {       
                         background: url(../sources/sources/logo_example_v1.png);
                         width: 90%;
@@ -60,11 +59,12 @@ body {
                         background-size: contain;
                 }
 
+
                 > .header_content {
                         display: inline-block;
                         float: left;
                         width: 90%;
-                        height: calc(100% - 100px);
+                        height: calc(100% - 100px - 5px);
                         margin-left: 5%;
 
                         > .complete_search {
@@ -82,9 +82,30 @@ body {
                                 }
 
                                 > .complete_search_magnify_icon {
-                                        
                                 }
+                        }
 
+                        > .news_opening_button {
+                        }
+
+                        > #header_button_style {
+                                display: inline-block;
+                                float: left;
+                                width: 100%;
+                                height: 25px;
+                                background-color: var(--secondary_color_1);
+                                border-radius: 100px;
+                                margin-top: 10px;
+                                color: var(--header_text_color_1);
+                                text-align: center;
+                                font-size: 23px;
+
+                        }
+
+                        > #header_button_style:hover {
+                                background-color: var(--secondary_color_2);
+                                color: var(--primary_color_1);
+                                transition-duration: 0.4s;
                         }
                 }
         }
