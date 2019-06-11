@@ -1,0 +1,61 @@
+:root {
+  --primary_color_1: #2d1400;
+  --primary_color_2: #704e2e;
+  --secondary_color_1: #6c9961;
+  --secondary_color_2: #9ad6b0;
+  --tertiary_color_1: #fdf6c5;
+  --header_text_color_1: #fdf6c5;
+}
+
+body,
+body * {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  vertical-align: top;
+}
+
+body > .background_main {
+  display: inline-block;
+  float: left;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-image: url(../sources/sources/Background_images/background_image_1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-filter: blur(2px) opacity(0.6);
+          filter: blur(2px) opacity(0.6);
+}
+
+body > .logo_upiu-tevas_1 {
+  background: url(../sources/sources/logo_example_v1.png);
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: inline-block;
+  float: left;
+  z-index: 2;
+}
+
+body > .header {
+  display: inline-block;
+  float: left;
+  width: 10vw;
+  height: 98vh;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  margin-left: 10px;
+  background-color: var(--primary_color_1);
+  border-radius: 10px;
+  position: absolute;
+  -webkit-filter: opacity(0.8);
+          filter: opacity(0.8);
+  color: var(--header_text_color_1);
+  min-width: 160px;
+}
+/*# sourceMappingURL=main.css.map */
