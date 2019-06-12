@@ -25,11 +25,11 @@ body {
                 height: 100vh;
                 position: fixed;
                 overflow: hidden;
-                background-image: url(../sources/sources/Background_images/background_image_1.jpg);
+                background-image: url(../sources/sources/Background_images/background_image_3.jpg);
                 background-position: center;
                 background-size: cover;
                 background-repeat: no-repeat;
-                filter: blur(2px) opacity(0.6);
+                filter: blur(4px) opacity(0.8);
         }
         
        
@@ -111,15 +111,15 @@ body {
         }
         
         > .main_content_area {
-                display: inline-block;
+                display: flex;
                 float: left;
                 width: 82vw;
                 height: 92vh;
-                background-color: var(--primary_color_2);
+                background-color: #e6e6fa;
                 position: absolute;
                 margin-top: 4vh;
                 margin-left: 16vw;
-                border-radius: 10px;
-                filter: opacity(0.5);
+                border-radius: 5px;
+                filter: opacity(0.3);
         }
 }
