@@ -5,6 +5,7 @@
         --secondary_color_1: #6c9961;
         --secondary_color_2: #9ad6b0;
         --tertiary_color_1: #fdf6c5;
+        --tertiary_color_2: #e6e6fa;
         --header_text_color_1: #fdf6c5;
 }
 
@@ -31,8 +32,7 @@ body {
                 background-repeat: no-repeat;
                 filter: blur(4px) opacity(0.8);
         }
-        
-       
+
         > .header_area {
                 display: inline-block;
                 float: left;
@@ -41,11 +41,20 @@ body {
                 margin-top: 4vh;
                 margin-bottom: 4vh;
                 margin-left: 30px;
-                background-color: var(--tertiary_color_2);
                 border-radius: 10px;
                 position: fixed;
-                filter: opacity(0.9);
-                
+
+                > .header_area_background {
+                        display: inline-block;
+                        float: left;
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        background-color: var(--tertiary_color_2);
+                        filter: opacity(0.2);
+                        z-index: -1;
+                }
+
                 > .logo_upiu-tevas_1 {       
                         background: url(../sources/sources/logo_example_v1.png);
                         width: 90%;
@@ -57,8 +66,8 @@ body {
                         background-repeat: no-repeat;
                         background-position: center;
                         background-size: contain;
+                        cursor: pointer;
                 }
-
 
                 > .header_content {
                         display: inline-block;
@@ -85,25 +94,26 @@ body {
                                 }
                         }
 
-                        > #header_button_style {
+                        > .header_button_style {
                                 display: inline-block;
                                 float: left;
                                 width: 100%;
                                 height: 25px;
                                 background-color: var(--secondary_color_1);
-                                border-radius: 100px;
+                                border-radius: 5px;
                                 margin-top: 10px;
                                 color: var(--header_text_color_1);
                                 text-align: center;
                                 font-size: 23px;
-
+                                cursor: pointer;
                         }
 
-                        > #header_button_style:hover {
-                                background-color: var(--secondary_color_2);
-                                color: var(--primary_color_1);
-                                transition-duration: 0.4s;
-                        }
+                        // > .header_button_style:hover {
+                        //         background-color: var(--secondary_color_2);
+                        //         color: var(--primary_color_1);
+                        //         transition-duration: 0.4s;
+                        //         transition-timing-function: ease-in-out;
+                        // }
                         
                         > .news_opening_button {
                         }
@@ -114,25 +124,175 @@ body {
                         > .contact_us_opening_button {
                         }
 
-                        > .sort_menu_opening_button {
+                        > .sort_menu_activation_button {
+                                display: inline-block;
+                                float: left;
+                                width: 100%;
+                                height: 25px;
+                                background-color: var(--secondary_color_1);
+                                border-radius: 5px 5px 5px 5px;
+                                margin-top: 10px;
+                                color: var(--header_text_color_1);
+                                text-align: center;
+                                font-size: 23px;
                         }
 
-                        > .sort_menu_opened {
+                        > .sort_menu_activation_button_opened {
+                                border-radius: 5px 5px 0px 0px;
+                        }
+
+                        > .sort_menu_area_closed {
+                                display: none;
+                                float: left;
+                                height: 0px;
+                                background-color: var(--secondary_color_1);
+                                width: 100%;
+                                border-radius: 0px 0px 5px 5px;
+                                        //transitionai kazkodel neveikia
+                                transition-duration: 0.4;
+                                transition-timing-function: ease-in-out;
+                        }
+
+                        > .sort_menu_area_opened {
+                                display: flex;
+                                float: left;
+                                min-height: 200px;
+                                background-color: var(--secondary_color_1);
+                                width: 100%;
+                                border-radius: 0px 0px 5px 5px;
+                                        //transitionai kazkodel neveikia
+                                transition-duration: 0.4;
+                                transition-timing-function: ease-in-out;
+
+
+                                        // laikinai nereikalinga
+                                // > .sort_menu_area_separation_lines_invisible {
+                                //         display: none;
+                                // }
+
+                                // > .sort_menu_area_separation_lines_visible {
+                                //         display: inline-block;
+                                //         float: left;
+                                //         width: 90%;
+                                //         height: 1px;
+                                //         background-color: var(--primary_color_1);
+                                //         filter: opacity(0.5);
+                                //         margin-top: 5px;
+                                //         margin-left: calc((100% - 90%) / 2 );
+                                // }
                                 
+                                * .barely_minimum_sorting_parameters_area {
+                                        display: inline-block;
+                                        float: Left;
+                                        width: 100%;
+                                        
+                                        > .water_body_dropdown {
+                                                width: 80%;
+                                                height: 1.8em;
+                                                font-size: 1em;
+                                                margin-top: 5px;
+                                                margin-left: calc(( 100% - 80%) / 2);
+                                        }
+
+                                        > .trip_duration_checkbox_area {
+                                                display: inline-block;
+                                                float: left;
+                                                width: 80%;
+                                                margin-top: 5px;
+                                                margin-left: calc(( 100% - 80%) / 2);
+                                                
+
+                                                > .trip_duration_checkbox_area_text {
+                                                        text-align: left;
+                                                }
+
+                                                > .trip_duration_checkbox {
+                                                        display: inline-block;
+                                                        float: left;
+                                                        width: calc( 100% / 3);
+                                                        height: 40px;
+                                                        margin-top: 7px;
+
+                                                        > p {
+                                                        text-align: center;
+                                                        width: 100%;
+                                                        height: 50%;
+                                                        }
+
+                                                        > .checkbox {
+                                                                width: 20px;
+                                                                height: 20px;
+                                                                margin-left: calc(( 100% - 20px ) / 2);
+                                                        }
+                                                }
+                                        }
+                                }
+                        }
+
+                        * .sort_menu_area_separation_lines_invisible {
+                                display: none;
+                        }
+
+                        * .sort_menu_area_separation_lines_visible {
+                                display: inline-block;
+                                float: left;
+                                width: 90%;
+                                height: 1px;
+                                background-color: var(--primary_color_1);
+                                filter: opacity(0.5);
+                                margin-top: 5px;
+                                margin-left: calc((100% - 90%) / 2 );
                         }
                 }
         }
+
         
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         > .main_content_area {
                 display: flex;
                 float: left;
-                width: 82vw;
-                height: 92vh;
-                background-color: #e6e6fa;
-                position: absolute;
+                position: relative;
+                max-width: 82vw;
+                min-height: 92vh;
                 margin-top: 4vh;
                 margin-left: 16vw;
                 border-radius: 5px;
-                filter: opacity(0.3);
-        }
+
+                > .main_content_area_background {
+                        display: inline-block;
+                        float: Left;
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        background-color: var(--tertiary_color_2);
+                        filter: opacity(0.2);
+                } 
+        }   
 }
