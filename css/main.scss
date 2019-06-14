@@ -19,6 +19,20 @@ body * {
 }
 // -------------------------------Body
 body {
+        * .header_button_style {
+                display: inline-block;
+                float: left;
+                width: 100%;
+                height: 25px;
+                background-color: var(--secondary_color_1);
+                border-radius: 5px;
+                margin-top: 10px;
+                color: var(--header_text_color_1);
+                text-align: center;
+                font-size: 23px;
+                cursor: pointer;
+        }
+
         > .background_main {
                 display: inline-block;
                 float: left;
@@ -94,19 +108,19 @@ body {
                                 }
                         }
 
-                        > .header_button_style {
-                                display: inline-block;
-                                float: left;
-                                width: 100%;
-                                height: 25px;
-                                background-color: var(--secondary_color_1);
-                                border-radius: 5px;
-                                margin-top: 10px;
-                                color: var(--header_text_color_1);
-                                text-align: center;
-                                font-size: 23px;
-                                cursor: pointer;
-                        }
+                        // > .header_button_style {
+                        //         display: inline-block;
+                        //         float: left;
+                        //         width: 100%;
+                        //         height: 25px;
+                        //         background-color: var(--secondary_color_1);
+                        //         border-radius: 5px;
+                        //         margin-top: 10px;
+                        //         color: var(--header_text_color_1);
+                        //         text-align: center;
+                        //         font-size: 23px;
+                        //         cursor: pointer;
+                        // }
 
                         // > .header_button_style:hover {
                         //         background-color: var(--secondary_color_2);
@@ -156,7 +170,6 @@ body {
                         > .sort_menu_area_opened {
                                 display: flex;
                                 float: left;
-                                min-height: 200px;
                                 background-color: var(--secondary_color_1);
                                 width: 100%;
                                 border-radius: 0px 0px 5px 5px;
@@ -164,69 +177,86 @@ body {
                                 transition-duration: 0.4;
                                 transition-timing-function: ease-in-out;
 
+                                > .sorting_menu_stabilization_container{
 
-                                        // laikinai nereikalinga
-                                // > .sort_menu_area_separation_lines_invisible {
-                                //         display: none;
-                                // }
-
-                                // > .sort_menu_area_separation_lines_visible {
-                                //         display: inline-block;
-                                //         float: left;
-                                //         width: 90%;
-                                //         height: 1px;
-                                //         background-color: var(--primary_color_1);
-                                //         filter: opacity(0.5);
-                                //         margin-top: 5px;
-                                //         margin-left: calc((100% - 90%) / 2 );
-                                // }
-                                
-                                * .barely_minimum_sorting_parameters_area {
-                                        display: inline-block;
-                                        float: Left;
-                                        width: 100%;
-                                        
-                                        > .water_body_dropdown {
-                                                width: 80%;
-                                                height: 1.8em;
-                                                font-size: 1em;
-                                                margin-top: 5px;
-                                                margin-left: calc(( 100% - 80%) / 2);
-                                        }
-
-                                        > .trip_duration_checkbox_area {
+                                        > .barely_minimum_sorting_parameters_area {
                                                 display: inline-block;
-                                                float: left;
-                                                width: 80%;
-                                                margin-top: 5px;
-                                                margin-left: calc(( 100% - 80%) / 2);
+                                                float: Left;
+                                                width: 100%;
                                                 
-
-                                                > .trip_duration_checkbox_area_text {
-                                                        text-align: left;
+                                                > .water_body_dropdown {
+                                                        width: 80%;
+                                                        height: 1.8em;
+                                                        font-size: 1em;
+                                                        margin-top: 5px;
+                                                        margin-left: calc(( 100% - 80%) / 2);
                                                 }
 
-                                                > .trip_duration_checkbox {
+                                                > .trip_duration_checkbox_area {
                                                         display: inline-block;
                                                         float: left;
-                                                        width: calc( 100% / 3);
-                                                        height: 40px;
-                                                        margin-top: 7px;
+                                                        width: 80%;
+                                                        margin-top: 5px;
+                                                        margin-left: calc(( 100% - 80%) / 2);
+                                                        
 
-                                                        > p {
-                                                        text-align: center;
-                                                        width: 100%;
-                                                        height: 50%;
+                                                        > .trip_duration_checkbox_area_text {
+                                                                text-align: left;
                                                         }
 
-                                                        > .checkbox {
-                                                                width: 20px;
-                                                                height: 20px;
-                                                                margin-left: calc(( 100% - 20px ) / 2);
+                                                        > .trip_duration_checkbox {
+                                                                display: inline-block;
+                                                                float: left;
+                                                                width: calc( 100% / 3);
+                                                                height: 40px;
+                                                                margin-top: 7px;
+
+                                                                > p {
+                                                                text-align: center;
+                                                                width: 100%;
+                                                                height: 50%;
+                                                                }
+
+                                                                > .checkbox {
+                                                                        width: 20px;
+                                                                        height: 20px;
+                                                                        margin-left: calc(( 100% - 20px ) / 2);
+                                                                }
                                                         }
                                                 }
                                         }
+
+                                        > .sleeepover_sorting_parameters_activation_button {
+                                                background-color: var(--secondary_color_2);
+                                                width: 95%;
+                                                margin-left: calc((100% - 95%) / 2);
+                                                margin-bottom: 5px;
+                                        }
+
+                                        > .sleepover_sorting_parameters_activation_button_opened {
+                                                border-radius: 5px 5px 0px 0px;
+                                                margin-bottom: 0px;
+                                        }
+
+                                        > .sleepover_sorting_parameters_area_hidden {
+                                                display: none;
+                                                float: left;
+                                                width: 95%;
+                                                margin-left: calc((100% - 95%) / 2);
+                                        }
+
+                                        > .sleepover_sorting_parameters_area_active {
+                                                display: inline-block;
+                                                float: left;
+                                                width: 95%;
+                                                height: 100px;;
+                                                margin-left: calc((100% - 95%) / 2);
+                                                background-color: var(--secondary_color_2);
+                                                border-radius: 0px 0px 5px 5px;
+                                                margin-bottom: 5px;
+                                        }
                                 }
+                                
                         }
 
                         * .sort_menu_area_separation_lines_invisible {

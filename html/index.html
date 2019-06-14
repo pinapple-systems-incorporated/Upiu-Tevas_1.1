@@ -49,38 +49,49 @@
 
             <div class="sort_menu_area_closed" id="sort_menu_area">
 
-                <div style="width: 100%">
+                <div style="width: 100%" class="sorting_menu_stabilization_container">
                     <div class="sort_menu_area_separation_lines_invisible" id="sort_menu_area_separation_line_1">  
                     </div>
 
                     <div class="barely_minimum_sorting_parameters_area">
                         
-                            <select name="Rivers" class="water_body_dropdown">
-                                <option value="*">Pasirinkite vandenį</option>
-                                <option value="nemunas">Nemunas</option>
-                                <option value="neris">Neris</option>
-                                <option value="ula">Ūla</option>
-                                <option value="merkys">Merkys</option>
-                            </select>
+                        <select name="Rivers" class="water_body_dropdown">
+                            <option value="*">Pasirinkite vandenį</option>
+                            <option value="nemunas">Nemunas</option>
+                            <option value="neris">Neris</option>
+                            <option value="ula">Ūla</option>
+                            <option value="merkys">Merkys</option>
+                        </select>
 
-                            <div class="trip_duration_checkbox_area">
-                                <p class="trip_duration_checkbox_area_text">Pasirinkite trukmę:</p>
-                                <div class="trip_duration_checkbox">
-                                    <p>1d.</p>
-                                    <input type="checkbox" class="checkbox">
-                                </div>
-                                <div class="trip_duration_checkbox">
-                                    <p>2d.</p>
-                                    <input type="checkbox" class="checkbox">
-                                </div>
-                                <div class="trip_duration_checkbox">
-                                    <p> &#8805 3d. </p>
-                                    <input type="checkbox" class="checkbox">
-                                </div>
-                                
+                        <div class="trip_duration_checkbox_area">
 
+                            <p class="trip_duration_checkbox_area_text">Pasirinkite trukmę:</p>
+                            <div class="trip_duration_checkbox">
+                                <p>1d.</p>
+                                <input type="checkbox" class="checkbox">
                             </div>
+                            <div class="trip_duration_checkbox">
+                                <p>2d.</p>
+                                <input type="checkbox" class="checkbox">
+                            </div>
+                            <div class="trip_duration_checkbox">
+                                <p> &#8805 3d. </p>
+                                <input type="checkbox" class="checkbox">
+                            </div>
+
+                        </div>
+
                     </div>
+
+                    <div class="header_button_style sleeepover_sorting_parameters_activation_button" 
+                            id="sleepover_sorting_parameters_activation_button"
+                            onclick="sleepover_menu_opening_function()">
+                        Nakvynė
+                    </div>
+                    <div class=sleepover_sorting_parameters_area_hidden id="sleepover_sorting_parameters_area">
+
+                    </div>
+
                 </div>
 
             </div>
