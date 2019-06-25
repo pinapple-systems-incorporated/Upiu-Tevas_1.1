@@ -83,14 +83,31 @@
 
                     </div>
 
-                    <div class="header_button_style sleeepover_sorting_parameters_activation_button" 
+                    <div class="header_button_style sleepover_sorting_parameters_activation_button" 
                             id="sleepover_sorting_parameters_activation_button"
                             onclick="sleepover_menu_opening_function()">
                         Nakvynė
                     </div>
+
                     <div class=sleepover_sorting_parameters_area_hidden id="sleepover_sorting_parameters_area">
+                        
+                        <div class="sort_menu_area_separation_lines_invisible" id="sort_menu_area_separation_line_2">
+                        </div> 
+                          
+                        <div class="sleepover_slide_button">
+
+                            <div class="sleepover_slider inactive" id="sleepover_slider" onclick="sleepover_slider_movement_function()">
+                                <p class="sleepover_slider_text"><< >></p>
+                            </div>
+
+                        </div>
+
+                        <div class="sleepover_sorting_parameters_inner_area inactive_inner" id="sleepover_sorting_parameters_inner_area">
+
+                        </div>
 
                     </div>
+                    
 
                 </div>
 
@@ -165,7 +182,7 @@
 
     </div>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
-    <script src="../js/functions.js"></script>
+    <script src="../js/sort_menu_actions.js"></script>
     
 </body>
 </html>

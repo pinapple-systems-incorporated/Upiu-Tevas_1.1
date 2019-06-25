@@ -18,3 +18,13 @@ function sleepover_menu_opening_function() {
     sort_menu_area_separation_line_2.classList.toggle("sort_menu_area_separation_lines_visible");
 
 }
+
+// function sleepover_slider_movement_function() {
+//     sleepover_slider.classList.toggle("active");
+//     sleepover_slider.classList.toggle("inactive");
+//     sleepover_sorting_parameters_inner_area.classList.toggle("inactive_inner");
+//     sleepover_sorting_parameters_inner_area.classList.toggle("active_inner");
+
+    
+    
+// }

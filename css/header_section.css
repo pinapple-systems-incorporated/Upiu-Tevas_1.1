@@ -1,0 +1,150 @@
+* .header_area {
+  display: inline-block;
+  float: left;
+  width: 12vw;
+  height: 92vh;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+  margin-left: 30px;
+  border-radius: 10px;
+  position: fixed;
+}
+
+* .header_area > .header_area_background {
+  display: inline-block;
+  float: left;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--tertiary_color_2);
+  -webkit-filter: opacity(0.2);
+          filter: opacity(0.2);
+  z-index: -1;
+}
+
+* .header_area > .logo_upiu-tevas_1 {
+  background: url(../sources/sources/logo_example_v1.png);
+  width: 90%;
+  height: 100px;
+  margin-left: 5%;
+  margin-top: 5px;
+  display: inline-block;
+  float: left;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+}
+
+* .header_area * .header_content {
+  display: inline-block;
+  float: left;
+  width: 90%;
+  height: calc(100% - 100px - 5px);
+  margin-left: 5%;
+}
+
+* .header_area * .header_content > .complete_search {
+  display: inline-block;
+  float: left;
+  width: 100%;
+  height: 25px;
+  margin-top: 10px;
+}
+
+* .header_area * .header_content > .complete_search > #complete_search_input_field {
+  width: 100%;
+  height: 25px;
+  border-radius: 100px;
+}
+
+* .header_area * .sort_menu_activation_button {
+  display: inline-block;
+  float: left;
+  width: 100%;
+  height: 25px;
+  background-color: var(--secondary_color_1);
+  border-radius: 5px 5px 5px 5px;
+  margin-top: 10px;
+  color: var(--header_text_color_1);
+  text-align: center;
+  font-size: 23px;
+}
+
+* .header_area > .sort_menu_activation_button_opened {
+  border-radius: 5px 5px 0px 0px;
+}
+
+* .header_area * .sort_menu_area_closed {
+  display: none;
+  float: left;
+  height: 0px;
+  background-color: var(--secondary_color_1);
+  width: 100%;
+  border-radius: 0px 0px 5px 5px;
+  -webkit-transition-duration: 0.4;
+          transition-duration: 0.4;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+* .header_area * .sort_menu_area_opened {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: left;
+  background-color: var(--secondary_color_1);
+  width: 100%;
+  border-radius: 0px 0px 5px 5px;
+  -webkit-transition-duration: 0.4;
+          transition-duration: 0.4;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+* .header_area * .sort_menu_area_opened > .sorting_menu_stabilization_container > .barely_minimum_sorting_parameters_area {
+  display: inline-block;
+  float: Left;
+  width: 100%;
+}
+
+* .header_area * .sort_menu_area_opened > .sorting_menu_stabilization_container > .barely_minimum_sorting_parameters_area > .water_body_dropdown {
+  width: 80%;
+  height: 1.8em;
+  font-size: 1em;
+  margin-top: 10px;
+  margin-left: calc(( 100% - 80%) / 2);
+}
+
+* .header_area * .sort_menu_area_opened > .sorting_menu_stabilization_container > .barely_minimum_sorting_parameters_area > .trip_duration_checkbox_area {
+  display: inline-block;
+  float: left;
+  width: 80%;
+  margin-top: 5px;
+  margin-left: calc(( 100% - 80%) / 2);
+}
+
+* .header_area * .sort_menu_area_opened > .sorting_menu_stabilization_container > .barely_minimum_sorting_parameters_area > .trip_duration_checkbox_area > .trip_duration_checkbox_area_text {
+  text-align: left;
+}
+
+* .header_area * .sort_menu_area_opened > .sorting_menu_stabilization_container > .barely_minimum_sorting_parameters_area > .trip_duration_checkbox_area > .trip_duration_checkbox {
+  display: inline-block;
+  float: left;
+  width: calc( 100% / 3);
+  height: 40px;
+  margin-top: 7px;
+}
+
+* .header_area * .sort_menu_area_opened > .sorting_menu_stabilization_container > .barely_minimum_sorting_parameters_area > .trip_duration_checkbox_area > .trip_duration_checkbox > p {
+  text-align: center;
+  width: 100%;
+  height: 50%;
+}
+
+* .header_area * .sort_menu_area_opened > .sorting_menu_stabilization_container > .barely_minimum_sorting_parameters_area > .trip_duration_checkbox_area > .trip_duration_checkbox > .checkbox {
+  width: 20px;
+  height: 20px;
+  margin-left: calc(( 100% - 20px ) / 2);
+}
+/*# sourceMappingURL=header_section.css.map */

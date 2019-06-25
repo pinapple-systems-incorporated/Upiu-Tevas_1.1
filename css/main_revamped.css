@@ -1,0 +1,102 @@
+:root {
+  --primary_color_1: #2d1400;
+  --primary_color_2: #704e2e;
+  --secondary_color_1: #6c9961;
+  --secondary_color_2: #9ad6b0;
+  --tertiary_color_1: #fdf6c5;
+  --tertiary_color_2: #e6e6fa;
+  --header_text_color_1: #fdf6c5;
+}
+
+body,
+body * {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  vertical-align: top;
+}
+
+body > .background_main {
+  display: inline-block;
+  float: left;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  overflow: hidden;
+  background-image: url(../sources/sources/Background_images/background_image_3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-filter: blur(4px) opacity(0.8);
+          filter: blur(4px) opacity(0.8);
+}
+
+body * .header_button_style {
+  display: inline-block;
+  float: left;
+  width: 100%;
+  height: 25px;
+  background-color: var(--secondary_color_1);
+  border-radius: 5px;
+  margin-top: 10px;
+  color: var(--header_text_color_1);
+  text-align: center;
+  font-size: 23px;
+  cursor: pointer;
+}
+
+body * .sort_menu_area_separation_lines_invisible {
+  display: none;
+}
+
+body * .sort_menu_area_separation_lines_visible {
+  display: inline-block;
+  float: left;
+  width: 90%;
+  height: 1px;
+  background-color: var(--primary_color_1);
+  -webkit-filter: opacity(0.5);
+          filter: opacity(0.5);
+  margin-top: 5px;
+  margin-left: calc((100% - 90%) / 2);
+}
+
+body * .header_area {
+  display: inline-block;
+  float: left;
+  width: 12vw;
+  height: 92vh;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+  margin-left: 30px;
+  border-radius: 10px;
+  position: fixed;
+}
+
+body * .header_area > .header_area_background {
+  display: inline-block;
+  float: left;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--tertiary_color_2);
+  -webkit-filter: opacity(0.2);
+          filter: opacity(0.2);
+  z-index: -1;
+}
+
+body * .header_area > .logo_upiu-tevas_1 {
+  background: url(../sources/sources/logo_example_v1.png);
+  width: 90%;
+  height: 100px;
+  margin-left: 5%;
+  margin-top: 5px;
+  display: inline-block;
+  float: left;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+}
+/*# sourceMappingURL=main_revamped.css.map */
