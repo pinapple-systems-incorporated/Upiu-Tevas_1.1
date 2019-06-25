@@ -71,7 +71,20 @@
   font-size: 23px;
 }
 
-* .header_area > .sort_menu_activation_button_opened {
+* .header_area * .sort_menu_activation_button_opened {
+  border-radius: 5px 5px 0px 0px;
+}
+
+* .header_area * .sleepover_sorting_parameters_activation_button {
+  background-color: var(--secondary_color_2);
+  margin: 5px 5px;
+  width: calc(100% - 10px);
+}
+
+* .header_area * .sleepover_sorting_parameters_activation_button_opened {
+  background-color: var(--secondary_color_2);
+  margin: 5px 5px 0px 5px;
+  width: calc(100% - 10px);
   border-radius: 5px 5px 0px 0px;
 }
 
@@ -146,5 +159,37 @@
   width: 20px;
   height: 20px;
   margin-left: calc(( 100% - 20px ) / 2);
+}
+
+* .header_area * .sleepover_sorting_parameters_area_hidden {
+  display: none;
+}
+
+* .header_area * .sleepover_sorting_parameters_area_active {
+  display: inline-block;
+  float: left;
+  margin: 0px 5px 5px 5px;
+  width: calc(100% - 10px);
+  background-color: var(--secondary_color_2);
+  border-radius: 0px 0px 5px 5px;
+}
+
+* .header_area * .sleepover_sorting_parameters_area_active > .sleepover_multi-checkbox_container {
+  display: inline-block;
+  float: left;
+  width: 100%;
+}
+
+* .header_area * .sleepover_sorting_parameters_area_active > .sleepover_multi-checkbox_container > .sleepover_checkbox_area {
+  width: 100%;
+  height: 30px;
+}
+
+* .header_area * .sleepover_sorting_parameters_area_active > .sleepover_multi-checkbox_container > .sleepover_checkbox_1_box {
+  margin-top: 5px;
+}
+
+* .header_area * .sleepover_sorting_parameters_area_active > .sleepover_multi-checkbox_container > .sleepover_checkbox_5_box {
+  margin-bottom: 5px;
 }
 /*# sourceMappingURL=header_section.css.map */

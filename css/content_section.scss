@@ -1,0 +1,20 @@
+* .main_content_area {
+    display: flex;
+    float: left;
+    position: relative;
+    max-width: 82vw;
+    min-height: 92vh;
+    margin-top: 4vh;
+    margin-left: 16vw;
+    border-radius: 5px;
+
+    > .main_content_area_background {
+            display: inline-block;
+            float: Left;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: var(--tertiary_color_2);
+            filter: opacity(0.2);
+    } 
+}   

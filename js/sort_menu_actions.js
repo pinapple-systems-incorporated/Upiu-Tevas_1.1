@@ -19,12 +19,4 @@ function sleepover_menu_opening_function() {
 
 }
 
-// function sleepover_slider_movement_function() {
-//     sleepover_slider.classList.toggle("active");
-//     sleepover_slider.classList.toggle("inactive");
-//     sleepover_sorting_parameters_inner_area.classList.toggle("inactive_inner");
-//     sleepover_sorting_parameters_inner_area.classList.toggle("active_inner");
 
-    
-    
-// }

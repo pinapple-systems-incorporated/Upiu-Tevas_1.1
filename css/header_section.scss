@@ -61,11 +61,11 @@
     }
 }
 //-----------------------------------------header buttons sub-styling
-> .news_opening_button {
+* .news_opening_button {
 }
-> .about_us_opening_button {
+* .about_us_opening_button {
 }
-> .contact_us_opening_button {
+* .contact_us_opening_button {
 }
 
 * .sort_menu_activation_button {
@@ -80,9 +80,22 @@
     text-align: center;
     font-size: 23px;
 }
-    > .sort_menu_activation_button_opened {
+    * .sort_menu_activation_button_opened {
         border-radius: 5px 5px 0px 0px;
     }
+
+* .sleepover_sorting_parameters_activation_button {
+    background-color: var(--secondary_color_2);
+    margin: 5px 5px;
+    width: calc(100% - 10px);
+}
+    * .sleepover_sorting_parameters_activation_button_opened {
+        background-color: var(--secondary_color_2);
+        margin: 5px 5px 0px 5px;
+        width: calc(100% - 10px);
+        border-radius: 5px 5px 0px 0px;
+    }
+    
 //------------------------------------------Sorting menu parameters-----
 
 * .sort_menu_area_closed {
@@ -156,6 +169,32 @@
         }
     }
 }
+
+* .sleepover_sorting_parameters_area_hidden {
+    display: none;
+}
+    * .sleepover_sorting_parameters_area_active {
+        display: inline-block;
+        float: left;
+        margin: 0px 5px 5px 5px;
+        width: calc(100% - 10px);
+        background-color: var(--secondary_color_2);
+        
+        border-radius: 0px 0px 5px 5px;
+
+        > .sleepover_multi-checkbox_container {
+            display: inline-block;
+            float: left;
+            width: 100%;
+
+            > .sleepover_checkbox_area {
+                width: 100%;
+                height: 30px;  
+            }
+            > .sleepover_checkbox_1_box {margin-top: 5px;}
+            > .sleepover_checkbox_5_box {margin-bottom: 5px;}
+        }
+    }
  
 
 

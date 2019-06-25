@@ -1,377 +1,66 @@
 // -------------------------------Root
 :root {
-        --primary_color_1: #2d1400;
-        --primary_color_2: #704e2e;
-        --secondary_color_1: #6c9961;
-        --secondary_color_2: #9ad6b0;
-        --tertiary_color_1: #fdf6c5;
-        --tertiary_color_2: #e6e6fa;
-        --header_text_color_1: #fdf6c5;
+    --primary_color_1: #2d1400;
+    --primary_color_2: #704e2e;
+    --secondary_color_1: #6c9961;
+    --secondary_color_2: #9ad6b0;
+    --tertiary_color_1: #fdf6c5;
+    --tertiary_color_2: #e6e6fa;
+    --header_text_color_1: #fdf6c5;
 }
-
 // -------------------------------Father
 body,
 body * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        vertical-align: top;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: top;
 }
-// -------------------------------Body
-body {
-        // -------------------------------global styles
-        * .header_button_style {
-                display: inline-block;
-                float: left;
-                width: 100%;
-                height: 25px;
-                background-color: var(--secondary_color_1);
-                border-radius: 5px;
-                margin-top: 10px;
-                color: var(--header_text_color_1);
-                text-align: center;
-                font-size: 23px;
-                cursor: pointer;
-        }
-        * .sort_menu_area_separation_lines_invisible {
-                display: none;
-        }
+// -------------------------------Body-----------------------------------
+body {  //bodis uzsidaro paciam gale, all good
+    // -------------------------------Background parameters
+    > .background_main {
+        display: inline-block;
+        float: left;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        overflow: hidden;
+        background-image: url(../sources/sources/Background_images/background_image_3.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        filter: blur(4px) opacity(0.8);
+    }
+    // -------------------------------global styles
+    * .header_button_style {
+        display: inline-block;
+        float: left;
+        width: 100%;
+        height: 25px;
+        background-color: var(--secondary_color_1);
+        border-radius: 5px;
+        margin-top: 10px;
+        color: var(--header_text_color_1);
+        text-align: center;
+        font-size: 23px;
+        cursor: pointer;
+    }
+    * .sort_menu_area_separation_lines_invisible {
+        display: none;
+    }
 
-                * .sort_menu_area_separation_lines_visible {
-                        display: inline-block;
-                        float: left;
-                        width: 90%;
-                        height: 1px;
-                        background-color: var(--primary_color_1);
-                        filter: opacity(0.5);
-                        margin-top: 5px;
-                        margin-left: calc((100% - 90%) / 2 );
-                }
+    * .sort_menu_area_separation_lines_visible {
+        display: inline-block;
+        float: left;
+        width: 90%;
+        height: 1px;
+        background-color: var(--primary_color_1);
+        filter: opacity(0.5);
+        margin-top: 5px;
+        margin-left: calc((100% - 90%) / 2 );
+    }
+// -------------------------------Header section-----next file------------
+// -------------------------------content body section-----next file------------
 
-        // -------------------------------Background parameters
-        > .background_main {
-                display: inline-block;
-                float: left;
-                width: 100vw;
-                height: 100vh;
-                position: fixed;
-                overflow: hidden;
-                background-image: url(../sources/sources/Background_images/background_image_3.jpg);
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-                filter: blur(4px) opacity(0.8);
-        }
-
-        // -------------------------------Header section
-        > .header_area {
-                display: inline-block;
-                float: left;
-                width: 12vw;
-                height: 92vh;
-                margin-top: 4vh;
-                margin-bottom: 4vh;
-                margin-left: 30px;
-                border-radius: 10px;
-                position: fixed;
-
-                > .header_area_background {
-                        display: inline-block;
-                        float: left;
-                        position: absolute;
-                        width: 100%;
-                        height: 100%;
-                        background-color: var(--tertiary_color_2);
-                        filter: opacity(0.2);
-                        z-index: -1;
-                }
-
-                > .logo_upiu-tevas_1 {       
-                        background: url(../sources/sources/logo_example_v1.png);
-                        width: 90%;
-                        height: 100px;
-                        margin-left: 5%;
-                        margin-top: 5px;
-                        display: inline-block;
-                        float: left;
-                        background-repeat: no-repeat;
-                        background-position: center;
-                        background-size: contain;
-                        cursor: pointer;
-                }
-
-                * .header_content {
-                        display: inline-block;
-                        float: left;
-                        width: 90%;
-                        height: calc(100% - 100px - 5px);
-                        margin-left: 5%;
-
-                        > .complete_search {
-                                display: inline-block;
-                                float: left;
-                                width: 100%;
-                                height: 25px;
-                                margin-top: 10px;
-
-                                > #complete_search_input_field {
-                                        width: 100%;
-                                        height: 25px;
-                                        border-radius: 100px;
-
-                                }
-
-                                > .complete_search_magnify_icon_area {
-                                        > .complete_search_magnify_icon{
-
-                                        }
-                                }
-                        }
-
-                        > .news_opening_button {
-                        }
-
-                        > .about_us_opening_button {
-                        }
-
-                        > .contact_us_opening_button {
-                        }
-
-                        > .sort_menu_activation_button {
-                                display: inline-block;
-                                float: left;
-                                width: 100%;
-                                height: 25px;
-                                background-color: var(--secondary_color_1);
-                                border-radius: 5px 5px 5px 5px;
-                                margin-top: 10px;
-                                color: var(--header_text_color_1);
-                                text-align: center;
-                                font-size: 23px;
-                        }
-
-                                > .sort_menu_activation_button_opened {
-                                        border-radius: 5px 5px 0px 0px;
-                                }
-
-                        > .sort_menu_area_closed {
-                                display: none;
-                                float: left;
-                                height: 0px;
-                                background-color: var(--secondary_color_1);
-                                width: 100%;
-                                border-radius: 0px 0px 5px 5px;
-                                        //transitionai kazkodel neveikia
-                                transition-duration: 0.4;
-                                transition-timing-function: ease-in-out;
-                        }
-
-                        > .sort_menu_area_opened {
-                                display: flex;
-                                float: left;
-                                background-color: var(--secondary_color_1);
-                                width: 100%;
-                                border-radius: 0px 0px 5px 5px;
-                                        //transitionai kazkodel neveikia
-                                transition-duration: 0.4;
-                                transition-timing-function: ease-in-out;
-
-                                > .sorting_menu_stabilization_container{
-
-                                        > .barely_minimum_sorting_parameters_area {
-                                                display: inline-block;
-                                                float: Left;
-                                                width: 100%;
-                                                
-                                                > .water_body_dropdown {
-                                                        width: 80%;
-                                                        height: 1.8em;
-                                                        font-size: 1em;
-                                                        margin-top: 10px;
-                                                        margin-left: calc(( 100% - 80%) / 2);
-                                                }
-
-                                                > .trip_duration_checkbox_area {
-                                                        display: inline-block;
-                                                        float: left;
-                                                        width: 80%;
-                                                        margin-top: 5px;
-                                                        margin-left: calc(( 100% - 80%) / 2);
-                                                        
-
-                                                        > .trip_duration_checkbox_area_text {
-                                                                text-align: left;
-                                                        }
-
-                                                        > .trip_duration_checkbox {
-                                                                display: inline-block;
-                                                                float: left;
-                                                                width: calc( 100% / 3);
-                                                                height: 40px;
-                                                                margin-top: 7px;
-
-                                                                > p {
-                                                                text-align: center;
-                                                                width: 100%;
-                                                                height: 50%;
-                                                                }
-
-                                                                > .checkbox {
-                                                                        width: 20px;
-                                                                        height: 20px;
-                                                                        margin-left: calc(( 100% - 20px ) / 2);
-                                                                }
-                                                        }
-                                                }
-                                        }
-
-                                        > .sleepover_sorting_parameters_activation_button {
-                                                background-color: var(--secondary_color_1);
-                                                width: 95%;
-                                                margin-left: calc((100% - 95%) / 2);
-                                                margin-bottom: 5px;
-                                        }
-
-                                                > .sleepover_sorting_parameters_activation_button_opened {
-                                                        border-radius: 5px 5px 0px 0px;
-                                                        margin-bottom: 0px;
-                                                }
-
-                                        > .sleepover_sorting_parameters_area_hidden {
-                                                display: none;
-                                        }
-
-                                        > .sleepover_sorting_parameters_area_active {
-                                                display: inline-block;
-                                                float: left;
-                                                width: 95%;
-                                                // height: 100px;
-                                                margin-left: calc((100% - 95%) / 2);
-                                                background-color: var(--secondary_color_2);
-                                                border-radius: 0px 0px 5px 5px;
-                                                margin-bottom: 5px;
-                                                #sort_menu_area_separation_line_2 {margin-top: 5px;}
-
-                                                // > .sleepover_slide_button {
-                                                //         display: inline-block;
-                                                //         float: left;
-                                                //         width: 95%;
-                                                //         border-radius: 30px;
-                                                //         height: 30px;
-                                                //         background-color: white;
-                                                //         box-shadow:  0px 0px 7px 1px #494745 ;
-                                                //         margin-left: calc((100% - 95%) / 2);
-                                                //         margin-top: 15px;
-                                                //         margin-bottom: 10px;
-
-                                                //         * .sleepover_slider_text {
-                                                //         }
-
-                                                //         > .sleepover_slider {
-                                                //                 display: inline-block;
-                                                //                 float: left;
-                                                //                 width: 50%;
-                                                //                 height: 26px;
-                                                //                 margin-left: 1%;
-                                                //                 margin-right: 1%;
-                                                //                 border-radius: 100px;
-                                                //                 margin-top: 2px;
-                                                //                 background-color: #7d7d83;
-                                                //         }
-                                                //                 > .inactive {
-                                                //                         display: inline-block;
-                                                //                         float: left;
-                                                //                         width: 50%;
-                                                //                         height: 26px;
-                                                //                         margin-left: 1.5%;
-                                                //                         margin-right: 1.5%;
-                                                //                         border-radius: 100px;
-                                                //                         margin-top: 2px;
-                                                //                         background-color: #7d7d83;
-                                                                        
-                                                //                 }
-                                                //                 > .active {
-                                                //                         display: inline-block;
-                                                //                         float: right;
-                                                //                         width: 50%;
-                                                //                         height: 26px;
-                                                //                         margin-left: 1.5%;
-                                                //                         margin-right: 1.5%;
-                                                //                         border-radius: 100px;
-                                                //                         margin-top: 2px;
-                                                //                         background-color: #32b42e;
-                                                                
-                                                //                 }
-                                                        
-                                                       
-                                                // }
-                                        }
-                                        .sleepover_sorting_parameters_inner_area { 
-                                                float: left;
-                                                width: 100%;      
-                                        }
-                                                * .inactive_inner {
-                                                        display: none;  
-                                                }
-                                                * .active_inner {
-                                                        display: inline-block;
-                                                        height: 100px;
-                                                        background-color: var(--secondary_color_2);
-                                                }
-                                                        
-                                }     
-                        }     
-                }
-        }
-}
-
-        
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        > .main_content_area {
-                display: flex;
-                float: left;
-                position: relative;
-                max-width: 82vw;
-                min-height: 92vh;
-                margin-top: 4vh;
-                margin-left: 16vw;
-                border-radius: 5px;
-
-                > .main_content_area_background {
-                        display: inline-block;
-                        float: Left;
-                        position: absolute;
-                        width: 100%;
-                        height: 100%;
-                        background-color: var(--tertiary_color_2);
-                        filter: opacity(0.2);
-                } 
-        }   
-}
+} //body užsidarymas
