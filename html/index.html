@@ -99,26 +99,90 @@
                         
                         <div class="sleepover_multi-checkbox_container">
                             <div class="sleepover_checkbox_area sleepover_checkbox_1_box">
-                                <input type="checkbox" name="public_camping_question" id="public_camping_question">
+                                <input type="checkbox" class="sleepover_boxing_left" name="public_camping_question" id="public_camping_question">
                                 <p>Valstybinis kempingas</p>
                             </div>
                             <div class="sleepover_checkbox_area sleepover_checkbox_2_box">
-                                
+                                <input type="checkbox" class="sleepover_boxing_left" name="private_camping_question" id="private_camping_question">
+                                <p>Privatus kempingas</p>
                             </div>
                             <div class="sleepover_checkbox_area sleepover_checkbox_3_box">
-
+                                <input type="checkbox" class="sleepover_boxing_left sleepover_unique_checkbox_repositioning" name="private_camping_cost_question" id="private_camping_cost_question">
+                                <p>Tinka mokamas?</p>
                             </div>
                             <div class="sleepover_checkbox_area sleepover_checkbox_4_box">
-
+                                <input type="checkbox" class="sleepover_boxing_left" name="bed_question" id="bed_question">
+                                <p>Lova</p>
                             </div>
                             <div class="sleepover_checkbox_area sleepover_checkbox_5_box">
-
+                                <input type="checkbox" class="sleepover_boxing_left" name="camper_question" id="camper_question">
+                                <p>Pritaikyta kemperiams</p>
                             </div>
-                        </div>
-                        
-                          
+                        </div>     
                     </div>
                     
+                    <div class="header_button_style parking_sorting_parameters_activation_button" 
+                            id="parking_sorting_parameters_activation_button"
+                            onclick="parking_menu_opening_function()">
+                        Parkavimas
+                    </div>
+
+                    <div class=parking_sorting_parameters_area_hidden id="parking_sorting_parameters_area">
+
+                        <div class="sort_menu_area_separation_lines_invisible" id="sort_menu_area_separation_line_3">
+                        </div>
+
+                        <div class="parking_multi-checkbox_container">
+                                <div class="parking_checkbox_area parking_checkbox_1_box">
+                                    <input type="checkbox" class="parking_boxing_left" name="leave_at_start_question" id="leave_at_start_question">
+                                    <p>Palikti starte</p>
+                                </div>
+                                <div class="parking_checkbox_area parking_checkbox_2_box">
+                                    <input type="checkbox" class="parking_boxing_left" name="leave_at_middle_question" id="leave_at_middle_question">
+                                    <p>Palikti pakeliui</p>
+                                </div>
+                                <div class="parking_checkbox_area parking_checkbox_3_box">
+                                    <input type="checkbox" class="parking_boxing_left" name="leave_at_finish_question" id="leave_at_finish_question">
+                                    <p>Palikti finiše</p>
+                                </div> 
+                        </div>     
+
+                    </div>
+                    <div class="header_button_style i_want_sorting_parameters_activation_button" 
+                            id="i_want_sorting_parameters_activation_button"
+                            onclick="i_want_menu_opening_function()">
+                        Aš dar noriu...
+                    </div>
+
+                    <div class=i_want_sorting_parameters_area_hidden id="i_want_sorting_parameters_area">
+                        
+                        <div class="sort_menu_area_separation_lines_invisible" id="sort_menu_area_separation_line_4">
+                        </div>
+                        
+                        <div class="i_want_multi-checkbox_container">
+                            <div class="i_want_checkbox_area i_want_checkbox_1_box">
+                                <input type="checkbox" class="i_want_boxing_left" name="coast_question" id="coast_question">
+                                <p>Patogaus kranto</p>
+                            </div>
+                            <div class="i_want_checkbox_area i_want_checkbox_2_box">
+                                <input type="checkbox" class="i_want_boxing_left" name="extension_question" id="extension_question">
+                                <p>Galimybės pratęsti kelionę</p>
+                            </div>
+                            <div class="i_want_checkbox_area i_want_checkbox_3_box">
+                                <input type="checkbox" class="i_want_boxing_left" name="sight-seing_question" id="sight-seing_question">
+                                <p>Pamatyti ką nors įdomaus</p>
+                            </div>
+                            <div class="i_want_checkbox_area i_want_checkbox_4_box">
+                                <input type="checkbox" class="i_want_boxing_left" name="multiple_wbc_question" id="multiple_wbc_question">
+                                <p>Plaukti per daug vandenų</p>
+                            </div>
+                            <div class="i_want_checkbox_area i_want_checkbox_5_box">
+                                <input type="checkbox" class="i_want_boxing_left" name="shop_question" id="shop_question">
+                                <p>Parduotuvės šalia</p>
+                            </div>
+                        </div>     
+                    </div>
+
 
                 </div>
 

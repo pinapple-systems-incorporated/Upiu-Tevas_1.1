@@ -95,7 +95,30 @@
         width: calc(100% - 10px);
         border-radius: 5px 5px 0px 0px;
     }
-    
+
+* .parking_sorting_parameters_activation_button {
+    background-color: var(--secondary_color_2);
+    margin: 0px 5px 5px 5px;
+    width: calc(100% - 10px);
+}
+    * .parking_sorting_parameters_activation_button_opened {
+        background-color: var(--secondary_color_2);
+        margin: 0px 5px 0px 5px;
+        width: calc(100% - 10px);
+        border-radius: 5px 5px 0px 0px;
+    }
+
+* .i_want_sorting_parameters_activation_button {
+    background-color: var(--secondary_color_2);
+    margin: 0px 5px 5px 5px;
+    width: calc(100% - 10px);
+}
+    * .i_want_sorting_parameters_activation_button_opened {
+        background-color: var(--secondary_color_2);
+        margin: 0px 5px 0px 5px;
+        width: calc(100% - 10px);
+        border-radius: 5px 5px 0px 0px;
+    }
 //------------------------------------------Sorting menu parameters-----
 
 * .sort_menu_area_closed {
@@ -193,10 +216,83 @@
             }
             > .sleepover_checkbox_1_box {margin-top: 5px;}
             > .sleepover_checkbox_5_box {margin-bottom: 5px;}
+            
+            * .sleepover_boxing_left {
+                float: left;
+                height: 30px;
+                width: 30px;
+                margin-left: 10px;
+            }
+            * p {line-height: 30px; font-size: 15px;}
+            * .sleepover_unique_checkbox_repositioning {margin-left: 30px;}
         }
     }
- 
 
+* .parking_sorting_parameters_area_hidden {
+    display: none;
+}
+    * .parking_sorting_parameters_area_active {
+        display: inline-block;
+        float: left;
+        margin: 0px 5px 5px 5px;
+        width: calc(100% - 10px);
+        background-color: var(--secondary_color_2);
+        border-radius: 0px 0px 5px 5px;
+
+        > .parking_multi-checkbox_container {
+            display: inline-block;
+            float: left;
+            width: 100%;
+
+            > .parking_checkbox_area {
+                width: 100%;
+                height: 30px;  
+            }
+            > .parking_checkbox_1_box {margin-top: 5px;}
+            > .parking_checkbox_3_box {margin-bottom: 5px;}
+            
+            * .parking_boxing_left {
+                float: left;
+                height: 30px;
+                width: 30px;
+                margin-left: 10px;
+            }
+            * p {line-height: 30px; font-size: 15px;}
+        }  
+    }
+* .i_want_sorting_parameters_area_hidden {
+    display: none;
+}
+    * .i_want_sorting_parameters_area_active {
+        display: inline-block;
+        float: left;
+        margin: 0px 5px 5px 5px;
+        width: calc(100% - 10px);
+        background-color: var(--secondary_color_2);
+        border-radius: 0px 0px 5px 5px;
+
+        > .i_want_multi-checkbox_container {
+            display: inline-block;
+            float: left;
+            width: 100%;
+
+            > .i_want_checkbox_area {
+                width: 100%;
+                height: 30px;  
+            }
+            > .i_want_checkbox_1_box {margin-top: 5px;}
+            > .i_want_checkbox_5_box {margin-bottom: 5px;}
+            
+            * .i_want_boxing_left {
+                float: left;
+                height: 30px;
+                width: 30px;
+                margin-left: 10px;
+            }
+            * p {line-height: 30px; font-size: 15px;}
+        }  
+    }
+    
 
 
 
